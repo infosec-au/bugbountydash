@@ -10,6 +10,7 @@ Steps for configuring the dashboard:
 
 1. Modify the `config.js.example` file to include your credentials.
 2. Rename this file to `config.js` and you're good to go.
+3. To run the dashboard, `node dash.js` or `nodejs dash.js`
 
 ------
 
@@ -22,3 +23,7 @@ The bugbountydashboard looks like this:
 ### Using the dashboard
 
 Simply use the keyboard keys 1, 2, 3, 4 to change tables within the dashboard. Clicking enter on any item will open the relevant URL in your browser.
+
+### Questions, comments and suggestions?
+
+Feel free to tweet at me here: [@infosec_au](https://twitter.com/infosec_au)
