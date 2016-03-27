@@ -1,0 +1,11 @@
+var config = {};
+
+config.hackerone = {};
+config.bugcrowd = {};
+
+config.hackerone.user_name = process.env.H1_USER || 'bugbountyhunter@youremail.com';
+config.hackerone.password =  process.env.H1_PASSWORD || 'yourpassword';
+config.bugcrowd.user_name = process.env.BC_USER || 'bugbountyhunter@youremail.com';
+config.bugcrowd.password = process.env.BC_PASSWORD || 'yourpassword';
+
+module.exports = config;

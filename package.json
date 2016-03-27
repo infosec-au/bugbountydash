@@ -1,0 +1,23 @@
+{
+  "name": "bugbountydash",
+  "version": "0.0.1",
+  "description": "An auto-updating dashboard for bug hunters that use HackerOne and BugCrowd",
+  "main": "dash.js",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^3.5.4",
+    "cheerio": "^0.20.0",
+    "nraw": "^0.2.5",
+    "request": "^2.69.0",
+    "openurl": "^1.1.1",
+    "unirest": "^0.4.2",
+    "rereddit": "^1.0.0",
+    "chalk": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubs",
+  "license": "MIT"
+}
