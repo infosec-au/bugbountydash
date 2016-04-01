@@ -383,7 +383,7 @@ setInterval(function() {
         try {
             h1_name = "Username: " + h1userinfo.username + "\n"
             h1_reputation = "Your reputation: " + h1userinfo.reputation + "\n"
-            h1_report_count = "Number of submitted reports: " + h1userinfo.report_count + "\n"
+            h1_report_count = "Number of resolved reports: " + h1userinfo.report_count + "\n"
             h1_signal = "Signal Percentile: " + h1userinfo.signal_percentile + "\n"
             h1_impact = "Impact Percentile: " + h1userinfo.impact_percentile + "\n"
             h1statistics.setContent(h1_profile + h1_name + h1_reputation + h1_report_count + h1_signal + h1_impact)
@@ -446,7 +446,11 @@ function generateH1DiscTable() {
 
     function callback(error, response, body) {
         if (!error && response.statusCode == 200) {
-            var disclosedbugs = JSON.parse(body);
+            try {
+                var disclosedbugs = JSON.parse(body);
+            } catch (e) {
+                var disclosedbugs = {}
+            }
             cacheddisclosedbugs = disclosedbugs
             for (var i = 0; i < disclosedbugs.length; i++) {
                 var row = []
